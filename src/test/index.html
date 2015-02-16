@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="ui-mobile-rendering">
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- The Scripts -->
+<script src="scripts/lib/require.js"></script>
+<!-- <script src="resources/js/jquery-mobile/jqm-config.js"></script>
+<script src="resources/js/lib/jquery.mobile-1.0.1.min.js"></script>
+<script src="resources/js/lib/underscore-min.js"></script>
+<script src="resources/js/lib/backbone-min.js"></script> -->
+
+<!-- 
+<script src="resources/js/models/employeemodel.js"></script>
+<script src="resources/js/controllers/employeeController.js"></script>
+<script src="resources/js/routers/employeeRouter.js"></script>
+<script src="resources/js/event-managers/employeeEventManager.js"></script>
+<script src="resources/js/views/employee-list.js"></script>
+<script src="resources/js/employee.main.app.js"></script> -->
+
+<script>
+	if (localStorage) {
+		var locale = localStorage.getItem('locale') || 'en';
+	} else {
+		var locale = 'es';
+	}
+	require([ 'require', 'scripts/employee.app.main' ], function() {
+		require([ 'controllers/employee.controller' ], function(
+				EmployeeController) {
+			return EmployeeController.initialize();
+		});
+	});
+</script>
+</head>
+<body>
+	<div id="_container"></div>
+</body>
+</html>

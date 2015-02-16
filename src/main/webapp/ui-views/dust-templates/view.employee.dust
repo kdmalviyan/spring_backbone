@@ -1,0 +1,46 @@
+ <section id="main">
+ 	<div>
+ 		<label><h1>Welcome, {preferredFullName}! Your detailed information displayed here:</h1></label>
+ 		<div>
+ 			<table border="1">
+ 				<tr>
+ 					<td>User Id</td>
+ 					<td>{userId}</td>
+ 				<tr>
+ 				<tr>
+ 					<td>First Name</td>
+ 					<td>{firstName}</td>
+ 				<tr>
+ 				<tr>
+ 					<td>Last Name</td>
+ 					<td>{lastName}</td>
+ 				<tr>
+ 				<tr>
+ 					<td>Job Title</td>
+ 					<td>{jobTitleName}</td>
+ 				<tr>
+ 				<tr>
+ 					<td>Emp Code</td>
+ 					<td>{employeeCode}</td>
+ 				<tr>
+ 				<tr>
+ 					<td>Phone</td>
+ 					<td>{phoneNumber}</td>
+ 				<tr>
+ 				<tr>
+ 					<td>Region</td>
+ 					<td>{region}</td>
+ 				<tr>
+ 				<tr>
+ 					<td>Email</td>
+ 					<td>{emailAddress}</td>
+ 				<tr>
+ 			</table>
+ 		</div>
+ 	</div>
+ </section>
+ <footer>
+    <div>
+      &copy;Kuldeep Singh
+    </div>
+ </footer>
